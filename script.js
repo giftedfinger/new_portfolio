@@ -64,11 +64,11 @@ btnScrollTo.addEventListener('click', e=>{
          );
 
         //  old way of scrolling
-    window.scrollTo({
-       left: s1coords.left + window.pageXOffset,
-       top: s1coords.top + window.pageYOffset,
-       behavior:'smooth'
-});
+//     window.scrollTo({
+//        left: s1coords.left + window.pageXOffset,
+//        top: s1coords.top + window.pageYOffset,
+//        behavior:'smooth'
+// });
 })
 
 ////////////////////////////////////////Event DElegation on Smooth Scroll///////////////////////////////////////////////////////
@@ -143,10 +143,11 @@ const navHeight = nav.getBoundingClientRect().height
 
 
 const obsCallback = (entries,observer)=>{
-
+console.log(nav)
 const [entry ] = entries
-console.log(entry)
-    if (!entry.isIntersecting) nav.classList.add('sticky')
+
+    if (!entry.isIntersecting) nav.classList.add('sticky') 
+    
     else nav.classList.remove('sticky')
 
 
