@@ -43,7 +43,8 @@ position: relative;
 .social_icons li span,
 .social_icons li::before,
 .social_icons li::after,
-.social_icons li span{
+.social_icons li span,
+{
 
     background-color: hsl(var(--gray));
         /* border: 1px solid  hsl(var(--gray)) ; */
