@@ -6,8 +6,13 @@
 section {
     padding: 5rem 0 ;
     border-top: 1px solid hsl(var(--gray));
+
+padding: 9px;
+box-sizing: border-box;
 position: relative;
     transition: transform 1s, opacity 1s;
+
+
 }
 /*  */
 
