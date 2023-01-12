@@ -302,18 +302,17 @@ h1 .name_style{
     width: 5rem;
     height: 5rem;
     margin: 0 2rem;
-   
 }
 
-.social_icons li::before,
+/* .social_icons li::before,
 .social_icons li::after{
      background: hsl( var( --gray));
       content: '';
           position: absolute;
 
-} 
+} */
 
- .social_icons li::before{
+/* .social_icons li::before{
     bottom: -1rem;
     left: 0;
     width: 100%;
@@ -321,7 +320,7 @@ h1 .name_style{
     transform-origin: top;
     transform: skewX(-41deg);
 }
-/* 
+
 .social_icons li::after{
    
     top: 0rem;
@@ -330,7 +329,7 @@ h1 .name_style{
     height: 100%;
     transform-origin: right;
     transform: skewY(-49deg);
-}
+} */
 
 .social_icons li span{
     position: absolute;
@@ -344,7 +343,7 @@ h1 .name_style{
     /* background-color: hsl(var(--gray)); */
     color: hsl( var( --light_color),.4);
     font-size: 3rem;
-} */
+}
 
 .social_icons li :hover span{
      z-index: 1000;
