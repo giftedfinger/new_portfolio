@@ -18,6 +18,11 @@
     --body_text_color:0, 0%, 91%;
     --btn_font: 1.6rem;
     --sample : rgb(224, 72, 97);
+    --facebook: #3b5999;
+--twitter:#55acee;
+--whatsapp:#25d366;
+--linkdin:#0077b5;
+ --instagram:#e4405f
     
 }
 
@@ -273,28 +278,144 @@ h1 .name_style{
 
 /* icon */
 
-.social_medials{
+.social_icons{
+
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+       
+        transform-style: preserve-3d;
+     transform: rotate(-25deg)  skew(25deg);
     position: absolute;
-    top: 30rem;
-    height: 5vh;
-   width: calc(15vh*2);
-    transition: all 1s;
-cursor: pointer;
+  top: 30rem; 
+  gap:3rem
+  
+
+}
+
+.social_icons ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.social_icons li{
+    position: relative;
+    list-style: none;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 2rem;
+   
+}
+
+.social_icons li::before,
+.social_icons li::after{
+     background: hsl( var( --gray));
+      content: '';
+          position: absolute;
+
+} 
+
+ .social_icons li::before{
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+/* 
+.social_icons li::after{
+   
+    top: 0rem;
+    left: -2rem;
+    width: 1rem;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(-49deg);
+}
+
+.social_icons li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(var(--gray)); */
+    color: hsl( var( --light_color),.4);
+    font-size: 3rem;
+} */
+
+.social_icons li :hover span{
+     z-index: 1000;
+     transition: 0.5s;
+         color: hsl( var( --light_color));
+         box-shadow: -1px 1px 1px rgba(0,0,0,.5);
+
+}
+
+.social_icons li :hover span:nth-child(5){
+    transform: translate(4rem,-4rem);
+    opacity: 1;
+}
+
+.social_icons li :hover span:nth-child(4){
+    transform: translate(3rem,-3rem);
+    opacity: .8;
+}
+
+.social_icons li :hover span:nth-child(3){
+    transform: translate(2rem,-2rem);
+    opacity: .6;
+}
+
+.social_icons li :hover span:nth-child(2){
+    transform: translate(1rem,-1rem);
+    opacity: .4;
+}
+
+.social_icons li :hover span:nth-child(1){
+    transform: translate(1rem,-1rem);
+    opacity: .1;
+}
+/* fb: 3b5999
+twil:55acee
+whatsapp:25d366
+lin:0077b5
+ ins:e4405f*/
+
+
+
+ .social_icons li:nth-child(1) :hover span{
+  background-color: var(--linkdin);
+}
+
+  .social_icons li:nth-child(2) :hover span{
+  background-color: var(--twitter);
+}
+
+ .social_icons li:nth-child(3) :hover span{
+   background-color: var(--whatsapp);
+}
+ .social_icons li:nth-child(4) :hover span{
+  background-color: var(--dark_background_color);
 }
 
 
-.social_medials .icon:hover{
+/* .social_icons li :hover span:nth-child(1){
+  background-color:hsl(var(--dark_background_color));
+} */
+
+
+/* .social_medials .icon:hover{
 justify-content: space-around;
 align-items: center;
 color: hsl( var( --pink_color));
-/* width: 15vw; */
+/* width: 15vw; 
 margin-right: 1rem;
-/* padding-top: 8px ; */
+transform: scale(80%);
 position: relative;
-}
+} */
 
 
 /*ABOUT ME */
@@ -358,7 +479,7 @@ margin-top: 4rem;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
     position: relative;
-     transform: skewY(-10deg);
+     transform: skewY(-12deg);
 
 }
 
@@ -374,9 +495,16 @@ margin-top: 4rem;
 
 }
 
+.skills_list li:hover,
+.skills_list li:hover span,
+.skills_list li:hover::after{
+   border: 1px solid var(--clr);
+}
 
 .skills_list li:hover{
 transform: translateX(-10rem);
+color: var(--clr);
+ 
 /* background-color: var(--clr); */
 }
 
@@ -399,9 +527,9 @@ transform: translateX(-10rem);
 }
 
 
-.skills_list li:hover:before{
+.skills_list li:hover span{
 
-    /* background-color: var(--clr); */
+color: var(--clr);
     filter: brightness(0.7);
   
 
@@ -424,7 +552,7 @@ transform: translateX(-10rem);
 }
 
 .skills_list li:hover::after{
-/* background-color: var(--clr); */
+
 filter: brightness(0.9);
 }
 
@@ -647,6 +775,7 @@ transform: translate(50%);
   border-top: 1px solid hsl(var(--body_text_color));
   position: relative;
   height: 30vh;
+  margin-bottom: 3rem;
  
 }
 
@@ -735,7 +864,7 @@ footer .btn--show-modal{
   bottom:5%;
   width: 100%;
 }
-
+/* 
   header {  
     background-image: linear-gradient(hsl(var(--dark_background_color),.45),hsl(var(--dark_background_color))),url(/img/IMG_9375_copy-removebg-preview.png);
     background-repeat: no-repeat;
@@ -743,7 +872,7 @@ footer .btn--show-modal{
     background-position-y: calc(0%/2);
     background-size:cover;
     height: 100vh;
-}
+} */
 
 .hero_text-div{
     /* border: 1px solid; */
@@ -804,7 +933,7 @@ position: absolute;
 bottom:50%;
 left: 45%;
 transform: translate(calc(-25%*2),calc(12rem*2));
-font-size: 1.97rem;
+font-size: 4rem;
 width: 20%;
 }
 

@@ -39,18 +39,30 @@ position: relative;
 
 /*////////////////////////////////////////// GLASSMORPHISM......////////////////////////////////////////// */
 
-.skills_list li,.section--sign-up{
- font-size: 1.7rem;
+.skills_list li,.section--sign-up,
+.social_icons li span,
+.social_icons li::before,
+.social_icons li::after,
+.social_icons li span{
+
     background-color: hsl(var(--gray));
-        border: 1px solid  hsl(var(--gray)) ;
+        /* border: 1px solid  hsl(var(--gray)) ; */
 text-align: center;
 background: rgba( 114, 116, 116, 0.4 );
-box-shadow: 0 3px 3px 0 rgba( 31, 38, 135, 0.27 );
+
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
- padding: 0 1rem;
+
+
+}
+
+.skills_list li,.section--sign-up,
+.social_icons li span{
+     font-size: 1.7rem;
+     border-radius: 10px;
+      padding: 0 1rem;
+      box-shadow: 0 3px 3px 0 rgba( 31, 38, 135, 0.27 );
+
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
