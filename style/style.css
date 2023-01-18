@@ -826,11 +826,10 @@ footer .btn--show-modal{
 }
 
    .nav {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 justify-content:space-around;
 
- 
 }
 
 
@@ -844,6 +843,7 @@ justify-content:space-around;
     text-decoration: none;
 
 }
+
 .nav__item {
     margin-left: 1rem;
 }
@@ -1081,7 +1081,7 @@ width: 85vw;
   border-top: 1px solid hsl(var(--body_text_color));
   position: relative;
   height: 30vh;
-  margin: 0;
+  margin-bottom: 10rem;
 
 }
 
