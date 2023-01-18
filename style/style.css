@@ -818,11 +818,40 @@ footer .btn--show-modal{
 }
 
  nav{
-    display: none;
   position: fixed;
-  bottom:5%;
+  bottom:0%;
   width: 100%;
+  z-index: 200;
+  
 }
+
+   .nav {
+    display: flex;
+    align-items: center;
+justify-content:space-around;
+
+ 
+}
+
+
+.nav__link:link {
+    display:block;
+    -webkit-border-radius: none;
+    -moz-border-radius: 6;
+    border-radius: 1px;
+    color: hsl( var(--light_color));
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+
+}
+.nav__item {
+    margin-left: 1rem;
+}
+
+.nav__link--btn:visited{
+    display: none;
+}
+/* header */
 
   header {  
     background-image: linear-gradient(hsl(var(--dark_background_color),.45),hsl(var(--dark_background_color))),url(/img/IMG_9375_copy-removebg-preview.png);
