@@ -1038,14 +1038,15 @@ width: 85vw;
     font-size: 1.4rem;
 }
 
-.btn--show-modal,.btn{
+.btn--show-modal,.btn,.footer .btn--show-modal{
     border-radius: 1.2rem;
     width: 50vw;
 }
 
 
 .section--sign-up h4{
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 /* /////////////////////////////////////////FOOTER */
@@ -1074,6 +1075,15 @@ width: 85vw;
 .footer_icon{
     display: flex;
  /* gap: 2rem; */
+}
+
+.footer .nav__link--btn{
+    padding: 1rem;
+    width: 12rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #0077b5;
+   
 }
 
 
