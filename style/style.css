@@ -1015,10 +1015,7 @@ color: var(--clr);
 
 /* PROJECT SECTION */
 
-.my_project{
-    display: none;
-    
-}
+
 
    .slider__btn{
     color: hsl( var( --dark_background_color));
@@ -1046,7 +1043,7 @@ width: 85vw;
 
 .section--sign-up h4{
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
 }
 
 /* /////////////////////////////////////////FOOTER */
