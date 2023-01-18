@@ -1082,6 +1082,7 @@ width: 85vw;
   position: relative;
   height: 30vh;
   margin-bottom: 16rem;
+ --webkit-margin-bottom: 16rem;
 
 }
 
