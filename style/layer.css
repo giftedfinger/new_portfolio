@@ -40,17 +40,12 @@ position: relative;
 /*////////////////////////////////////////// GLASSMORPHISM......////////////////////////////////////////// */
 
 .skills_list li,.section--sign-up,
-.social_icons li span,
-.social_icons li::before,
-.social_icons li::after,
-.social_icons li span,
-{
 
+.social_icons li::before
+{
     background-color: hsl(var(--gray));
-        /* border: 1px solid  hsl(var(--gray)) ; */
 text-align: center;
 background: rgba( 114, 116, 116, 0.4 );
-
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 4px );
 
@@ -60,8 +55,9 @@ backdrop-filter: blur( 2px );
 .skills_list li,.section--sign-up,
 .social_icons li span{
      font-size: 1.7rem;
-     border-radius: 10px;
-      padding: 0 1rem;
+  border-radius: 10px;
+    --webkit-border-radius: 10px;
+      /* padding: 0 1rem; */
       box-shadow: 0 3px 3px 0 rgba( 31, 38, 135, 0.27 );
 
 }
@@ -95,7 +91,10 @@ border: 1px solid var(--pink_color);
 } */
 
 .header__title {
-   
+   background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,))url('/img/about_img.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
     height: 80vh;
     border: 1px solid var(--light_color);
 }
