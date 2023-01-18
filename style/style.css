@@ -848,7 +848,7 @@ justify-content:space-around;
     margin-left: 1rem;
 }
 
-.nav__link--btn:visited{
+ .nav__link--btn {
     display: none;
 }
 /* header */
