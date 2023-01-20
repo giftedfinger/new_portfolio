@@ -146,7 +146,7 @@ const obsCallback = (entries,observer)=>{
 console.log(nav)
 const [entry ] = entries
 
-    if (!entry.isIntersecting) nav.classList.add('sticky') 
+    if (!entry.isIntersecting) nav.classList.add('bg') 
     
     else nav.classList.remove('sticky')
 
