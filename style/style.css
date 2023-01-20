@@ -876,10 +876,13 @@ justify-content:space-around;
     position: absolute;
     right: 3rem;
     display: block;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
+/* .mobile_logo:first-child{
+
+} */
 /* header */
 
   header {  
