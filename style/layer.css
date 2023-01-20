@@ -27,7 +27,7 @@ position: relative;
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
     margin-bottom: 1rem;
 }
 
@@ -43,7 +43,7 @@ position: relative;
 
 .social_icons li::before
 {
-    background-color: hsl(var(--gray));
+    /* background-color: hsl(var(--gray)); */
 text-align: center;
 background: rgba( 114, 116, 116, 0.4 );
 backdrop-filter: blur( 2px );
@@ -55,9 +55,7 @@ backdrop-filter: blur( 2px );
 .skills_list li,.section--sign-up,
 .social_icons li span{
      font-size: 1.7rem;
-  border-radius: 10px;
-    --webkit-border-radius: 10px;
-      /* padding: 0 1rem; */
+
       box-shadow: 0 3px 3px 0 rgba( 31, 38, 135, 0.27 );
 
 }
@@ -80,15 +78,13 @@ backdrop-filter: blur( 2px );
     margin: 0 auto;
     border:1px solid transparent ;
 }
+
 main{
     display: grid;
 grid-gap: 4rem;
 }
 
-/* div{
-border: 1px solid var(--pink_color);
 
-} */
 
 .header__title {
    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,))url('/img/about_img.png');
@@ -96,7 +92,7 @@ border: 1px solid var(--pink_color);
    background-repeat: no-repeat;
    background-size: cover;
     height: 80vh;
-    border: 1px solid var(--light_color);
+    border: 1px solid var(--light_color),.7;
 }
 
  
@@ -112,18 +108,9 @@ header .hero div{
     /* height:80vh; */
     border: 1px solid var(--light_color);
 }
-/* 
-nav{
-    height: 10vh;
-    border:3px solid pink;
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-} */
 
 .about_container{
   margin-top: 4rem;
-  /* background-color: red; */
 }
 .about_content{
        display: grid;

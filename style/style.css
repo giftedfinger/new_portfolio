@@ -26,7 +26,9 @@
 --whatsapp:#25d366;
 --linkdin:#0077b5;
  --instagram:#e4405f;
- --color:hsl(50, 100%, 50%);
+  --border-radius: 6px;
+ --button_bg:#f99cac;
+
     
 }
 
@@ -40,7 +42,7 @@
 
 html {
     font-size: 0.625rem;
-    /* color: #e04861; */
+   color:hsl(var(--body_text_color),.7)   ;
  
 }
 
@@ -52,9 +54,9 @@ body {
     font-family: 'Chakra Petch',sans-serif;
     font-weight: 300;
     font-size: 1.7rem;
-    color:hsl(var(--body_text_color))   ;
+ 
      line-height: 1.9;
-     /* background-color:  #e04861; */
+     /* background-color:  #f0677e; */
    
 }
 
@@ -70,12 +72,12 @@ h2{
 
 
 
-/* --------------------------------- */
+/* --------------BUTTON GENERAL STYLING------------------- */
 
 
 .btn {
     display: inline-block;
-    background-color: hsl(var(--pink_color));
+    background-color: var(--button_bg);
     font-size:var(--btn_font);
     font-family: inherit;
     font-weight: 500;
@@ -88,13 +90,11 @@ h2{
 }
 
 
- .btn--scroll-to,
- .nav__link--btn:link,
-.nav__link--btn:visited{
+ .btn--scroll-to{
     width: 10vw;
     background-color: transparent;
       border: 1px solid hsl(var(--pink_color));
-    color: hsl(var(--light_color));
+    /* color: hsl(var(--light_color)); */
    font-size:var(--btn_font);
       transition: all .8s;
    text-align: center;
@@ -103,42 +103,42 @@ h2{
 
 .btn--scroll-to ,
 .nav__link:link,
-.nav__link:visited {
-        display: block;
+.nav__link:visited,
+.section--sign-up .btn{
+        /* display: block; */
   -webkit-border-radius: 6;
   -moz-border-radius: 6;
-  border-radius: 6px;
-  color: hsl( var( --light_color));
+  border-radius:var(--border-radius);
+  color: hsl( var( --light_color),.7);
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 
 }
 
 
- .nav__link--btn:link,
-.nav__link--btn:visited{
 
- background:hsl( var( --pink_color));
-        padding: .5rem .4rem;
-    border-radius: 1rem;
-      color: hsl(var(--light_color));
-
-}
  /* background: linear-gradient(113.94389852113807deg, rgba(248, 188, 79,1) 6.140625%,rgba(211, 21, 87,1) 95.51562499999999%); */
+
+ /* CTA and Project buttons */
 .btn--scroll-to:hover,
-.nav__link--btn:link:hover, 
-.nav__link--btn:visited:hover{
-  background: hsl(var(--light_color));
-background:hsl( var( --pink_color));
-  background-image: hsl( var( --pink_color));
-  background-image: hsl( var( --pink_color));
-  background-image:hsl( var( --pink_color));
-  background-image:hsl( var( --pink_color));;
+
+.section--sign-up .btn, .nav__link--btn:link,
+.nav__link--btn:visited
+{
+background:var(--button_bg);
   text-decoration: none;
-  color: hsl(var(--light_color));
-  border: 1px solid hsl(var(--pink_color));
-  font-size:2rem;
-   /* font-weight: 600; */
+  color: hsl(var(--pink_color));
+  border: 1px solid var(--button_bg);
+    font-weight: 600;
+}
+
+.btn--scroll-to:hover,.nav__link--btn:link:hover,.nav__link--btn:visited:hover{
+   transform: scale(92%);
+}
+
+.section--sign-up .btn{
+   padding: 2rem 4rem;
+   
 }
 
 .nav__link--btn span {
@@ -146,6 +146,20 @@ background:hsl( var( --pink_color));
     margin-top: 10px;
 }
 
+/*GENERAL STLING  WITH FLEX  (DESKTOP)*/
+.social_icons,
+.social_icons li span,
+.skill_container,
+.skills_list,
+.skill_container,
+.skills_list,
+.slide,
+.footer__nav{
+            display: flex;
+               display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -160,16 +174,10 @@ background:hsl( var( --pink_color));
 } */
 .nav{
     border: transparent;
-/* padding: .8rem 1rem; */
    margin: 1rem;
    align-content: center;
-   /* width: 100vw; */
-   /* border: 1px solid; */
 
-}
 
-.bg{
-    
 }
 
 
@@ -205,8 +213,6 @@ backdrop-filter: blur( 4px );
     display: none;
 }
 
-/*  */
-
 .nav__item {
     margin-left: 4rem;
 }
@@ -215,9 +221,6 @@ backdrop-filter: blur( 4px );
 .logo span{
   color: #e4405f;
 }
-
-/* buttons */
-
 
 
 /* * HEADER */
@@ -247,14 +250,13 @@ z-index: -1;
     top: 0%;
     left: 50%;
     transform: translate(40%,0%);
-    display: flex;
+  
     flex-direction: column;
   justify-content: center;
 
 }
 
 h1 {
-  /* word-spacing: 10px; */
   letter-spacing: 2px;
     font-size: 2rem;
     line-height: 1.35;
@@ -264,8 +266,6 @@ h1 {
 
 
 h1 .name_style{
-    display: block;
-
 color: hsl( var( --pink_color));
   font-size: 5rem;
   line-height:5.5rem;
@@ -281,7 +281,6 @@ color: hsl( var( --pink_color));
 
 .span_hero_text{
     display: block;
-    position: relative;
     right: 50%;
 }
 
@@ -290,16 +289,11 @@ color: hsl( var( --pink_color));
     margin-top: 2rem;
     margin-bottom: 3.5rem;
     line-height: 2.3rem;
-    color: hsl(var(--body_text_color));
+    /* color: hsl(var(--body_text_color)); */
     font-weight:300;
   
 }
 
-
-.btn--scroll-to:hover,.btn ,
-footer .btn--show-modal,footer .btn--show-modal {
-    color:rgb(242, 178, 155)
-}
 
 .img_container{
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
@@ -308,9 +302,9 @@ footer .btn--show-modal,footer .btn--show-modal {
 
 /* icon */
 
+
 .social_icons{
-        display: flex;
-        flex-wrap: wrap;
+     flex-wrap: wrap;
         transform-style: preserve-3d;
      transform: rotate(-25deg)  skew(25deg); 
     position: absolute;
@@ -324,8 +318,6 @@ footer .btn--show-modal,footer .btn--show-modal {
 
 
 .social_icons > li{
-    /* flex:3%;
-    flex-basis: 40%; */
     position: relative;
     list-style: none;
     width: 7rem;
@@ -342,9 +334,6 @@ footer .btn--show-modal,footer .btn--show-modal {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: hsl(var(--light_color),.2);
     color: hsl( var( --dark_background_color));
     font-size: 3rem;
@@ -386,11 +375,6 @@ footer .btn--show-modal,footer .btn--show-modal {
     opacity: .1;
 }
 
-/* fb: 3b5999
-twil:55acee
-whatsapp:25d366
-lin:0077b5
- ins:e4405f*/
 
  .social_icons  li:nth-child(3):hover span{
    background-color: var(--whatsapp);
@@ -427,13 +411,6 @@ margin-top: 4rem;
     height: 80vh;
 }
 
-.skill_container,.skills_list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
 
 .my_skills{
     margin:4rem 0;
@@ -533,9 +510,7 @@ filter: brightness(0.9);
 .skills_list li span{
 color: hsl( var( --light_color));
 font-size:3.3rem ;
-display: flex;
-justify-content: center;
-align-items: center;
+
 }
 
 
@@ -556,18 +531,24 @@ align-items: center;
     overflow: hidden;
 }
 
-.slide {
+ .slide{
     position: absolute;
     top: 0;
     width: 100%;
     height: 50rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     /* THIS creates the animation! */
     transition: transform 1s;
+}
+/* ********************* */
+/*GENERAL styling */
+/* ********************* */
+
+
+.skill_container,.skills_list{ 
+    justify-content: center;
+ 
+   
 }
 
 .slide>img {
@@ -711,23 +692,21 @@ background: hsl(var(--light_color));
 
 .btn{
     /* color:rgb(242, 178, 155); */
+        color: hsl( var( --dark_background_color));
+    /* border: 1px solid hsl( var( --dark_background_color),.2); */
+    background-color: transparent;
+    box-shadow: -2px 1px 4px 2px hsl( var( --dark_background_color),.2);
     position: absolute;
   right: 50%;
 transform: translate(50%);
 }
 
-.btn:hover{
-    color: hsl( var( --dark_background_color),.5);
-    border: 1px solid hsl( var( --dark_background_color),.2);
-    background-color: transparent;
-    box-shadow: -2px 1px 4px 2px hsl( var( --dark_background_color),.2);
-}
+
 .section--sign-up h4{
     color:hsl( var( --dark_background_color)) ;
 }
 
 .section--sign-up .section__header {
-    /* color: #fff; */
     text-align: center;
 }
 
@@ -735,10 +714,7 @@ transform: translate(50%);
     margin-bottom: 6rem;
 }
 
-.section--sign-up .btn {
-    font-size: 1.9rem;
-    padding: 2rem 5rem;
-}
+
 
 
 /* /////////////////////////////////////////FOOTER */
@@ -761,8 +737,6 @@ transform: translate(50%);
 
 .footer__nav {
     list-style: none;
-    display: flex;
-    justify-content: center;
  position: absolute;
  bottom: 50%; 
  left: 50%;
@@ -824,7 +798,7 @@ footer .btn--show-modal{
 @media screen and  (min-width: 200px) and  (max-device-width: 768px){
   /*CSS for medium width screens*/
      body{ 
-        font-size: 1.525rem;
+        font-size: 1.75rem;
     line-height: 1.75rem;
 }
 
@@ -1079,6 +1053,7 @@ border: 1px solid hsl( var( --light_color),.3);
 }
 .skills_list li,
 .skills_list li::after{
+  
  max-width: 49vw;
   --webkit-width: 49vw;
 }
