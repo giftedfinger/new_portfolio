@@ -862,8 +862,8 @@ justify-content:space-around;
 }
 
 .nav__item {
-    margin-left:1rem;
-    margin-right: 1rem;
+    margin-left:1.5rem;
+  
     font-weight: 600;
 }
 
