@@ -863,16 +863,15 @@ justify-content:space-around;
 
 .nav__item {
     margin-left:1.5rem;
-  
     font-weight: 600;
 }
 
- .nav__link--btn {
-    display: none;
-}
+
+
 .logo{
     display: none;
 }
+
 .mobile_logo{
     position: absolute;
     right: 3rem;
@@ -1041,7 +1040,7 @@ transform: translate(-55%);
     text-align: left;
 }
 
-/*  */
+/* SKILLS */
 
 .my_skills{
     height: 100vh;
@@ -1054,6 +1053,7 @@ transform: translate(-55%);
    /* border:1px solid ; */
  
 }
+
 
 .skills_list{
 /*     
@@ -1080,6 +1080,7 @@ border: 1px solid hsl( var( --light_color),.3);
 .skills_list li,
 .skills_list li::after{
  max-width: 49vw;
+  --webkit-width: 49vw;
 }
 
 .skills_list li:hover{
