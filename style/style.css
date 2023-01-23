@@ -42,7 +42,7 @@
 
 html {
     font-size: 0.625rem;
-   color:hsl(var(--body_text_color),.7)   ;
+   color:hsl(var(--body_text_color),.8)   ;
  
 }
 
@@ -125,11 +125,11 @@ h2{
 .section--sign-up .btn, .nav__link--btn:link,
 .nav__link--btn:visited
 {
-background:var(--button_bg);
+background:hsl(var(--pink_color));
   text-decoration: none;
-  color: hsl(var(--pink_color));
-  border: 1px solid var(--button_bg);
-    font-weight: 600;
+  color: hsl(var(--light_color));
+  border: 1px solid var(--pink_color);
+    
 }
 
 .btn--scroll-to:hover,.nav__link--btn:link:hover,.nav__link--btn:visited:hover{
@@ -704,6 +704,7 @@ transform: translate(50%);
 
 .section--sign-up h4{
     color:hsl( var( --dark_background_color)) ;
+    text-align: left;
 }
 
 .section--sign-up .section__header {
@@ -795,12 +796,14 @@ footer .btn--show-modal{
 }
 
 
-@media screen and  (min-width: 200px) and  (max-device-width: 768px){
+@media screen and  (min-width: 200px) and  (max-device-width: 760px){
   /*CSS for medium width screens*/
      body{ 
         font-size: 1.75rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
 }
+
+/* mobile logo */
 
 
 .center_div{
@@ -854,16 +857,16 @@ justify-content:space-around;
     margin-left: 2rem;
 }
 
-.mobile_logo:first-child{
-    
-}
+
 /* header */
 
   header {  
-    background-image: linear-gradient(hsl(var(--dark_background_color),.45),hsl(var(--dark_background_color))),url(/img/IMG_9375_copy-removebg-preview.png);
+    background-image: linear-gradient(hsl(var(--dark_background_color),.45),hsl(var(--dark_background_color)))
+    ,url(/img/IMG_9375_copy-removebg-preview.png);
+
     background-repeat: no-repeat;
-    background-position:calc(-15%*2);
-    background-position-y: calc(0%/2);
+    background-position:calc(8vw);
+    background-position-y: calc(3vw);
     background-size:cover;
     height: 100vh;
 }
@@ -965,7 +968,8 @@ margin-top: 0rem;
 }
 
 .about_img {
-    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .about_content{
@@ -1004,7 +1008,7 @@ margin: 0;
 position: relative;
 left: 50%;
 right: inherit;
-transform: translate(-55%);
+transform: translate(-50%);
     text-align: left;
       line-height: 2.5rem;
 }
@@ -1072,20 +1076,28 @@ color: var(--clr);
 
 /* PROJECT SECTION */
 
-
+.slide{
+    height: 100vh;
+    margin-bottom: 15rem;
+  
+}
 
    .slider__btn{
-min-width: calc(2%*2);
- min-height: calc(3%*2);
-   font-size: 1.5em;
-    
+    position: absolute;
+    top:98%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+
 }
+    
+
 
 
 /* signup */
 
 .section--sign-up{
-width: 85vw;
+width: 90vw;
 }
 
 .section--sign-up .btn{
@@ -1162,6 +1174,65 @@ padding:2px;
 }
 
 }
+/* 442 */
+
+
+@media screen and  (min-width:400px){
+      header {  
+    background-position:calc(10vw*2);
+    background-position-y: calc(18%/2); 
+
+    
+ 
+}
+}
+
+@media screen and  (min-width: 580px) {
+
+.center_div{
+    width: 90%;
+}    
+      header {  
+    background-position:calc(11vw*2);
+    background-position-y: calc(18%/2); 
+
+    
+ 
+}
+
+/* mobile logo display */
+.mobile_logo{
+    display: none;
+}
+/* desktop logo */
+.logo{
+    display: block;
+}
+
+
+.nav__item{
+    margin-left: 4rem;
+}
+.description p{
+    width: 70vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.about_img{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+}
+}
 
 @media (width: 768px){
       header {  
@@ -1217,10 +1288,84 @@ padding:2px;
 
 }
 
-@media screen and  (max-width: 900px) {
+@media only screen 
+and (min-device-width : 761px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+        header {  
+    background-position:calc(65%*2);
+    background-position-y: calc(20%/2); 
+}
+
+h1{
+    width: 50vw;
+    border: 1px solid;
+}
+
+.btn--scroll-to{
+    width: auto;
+}
+
+.social_icons {
+
+    top: 28rem;
+    left: 6rem;
+    gap: 2rem;
+    width: 45vh;
 
 }
 
+.description p{
+    width: auto;
+}
+}
+
+
+
+
+
 @media screen and (max-width: 1000px) {
 
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
 }
