@@ -96,7 +96,7 @@ h2{
       border: 1px solid hsl(var(--pink_color));
     /* color: hsl(var(--light_color)); */
    font-size:var(--btn_font);
-      transition: all .8s;
+  
    text-align: center;
       cursor: pointer; 
 }
@@ -112,6 +112,7 @@ h2{
   color: hsl( var( --light_color),.7);
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+ transition: all .8s;
 
 }
 
@@ -121,7 +122,6 @@ h2{
 
  /* CTA and Project buttons */
 .btn--scroll-to:hover,
-
 .section--sign-up .btn, .nav__link--btn:link,
 .nav__link--btn:visited
 {
@@ -132,8 +132,11 @@ background:hsl(var(--pink_color));
     
 }
 
-.btn--scroll-to:hover,.nav__link--btn:link:hover,.nav__link--btn:visited:hover{
-   transform: scale(92%);
+.btn--scroll-to:hover,
+.nav__link--btn:link:hover,
+.nav__link--btn:visited:hover{
+   transform: scale(90%);
+
 }
 
 .section--sign-up .btn{
@@ -202,9 +205,11 @@ backdrop-filter: blur( 4px );
 }
 
 
-
-.nav__logo {
-    height: 4.5rem;
+.nav img{
+    width: 5vw;
+}
+.logo {
+width: 60%;
     transition: all 0.3s;
 }
 
@@ -216,12 +221,6 @@ backdrop-filter: blur( 4px );
 .nav__item {
     margin-left: 4rem;
 }
-
-
-.logo span{
-  color: #e4405f;
-}
-
 
 /* * HEADER */
 
@@ -1290,16 +1289,15 @@ padding:2px;
 
 @media only screen 
 and (min-device-width : 761px) 
-and (max-device-width : 1024px) 
 and (orientation : landscape) {
         header {  
-    background-position:calc(65%*2);
+       
+    background-position:calc(66%*2);
     background-position-y: calc(20%/2); 
 }
 
 h1{
-    width: 50vw;
-    border: 1px solid;
+    /* width: 50vw; */
 }
 
 .btn--scroll-to{
@@ -1308,8 +1306,8 @@ h1{
 
 .social_icons {
 
-    top: 28rem;
-    left: 6rem;
+    top: 35rem;
+    left: 10rem;
     gap: 2rem;
     width: 45vh;
 
