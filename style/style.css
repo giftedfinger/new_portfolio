@@ -762,7 +762,11 @@ transform: translate(50%);
 
 .section--sign-up h4{
     color:hsl( var( --dark_background_color)) ;
-    text-align: center;
+    text-align: left;
+    font-size: 2.5rem;
+    /* filter:url(../img/logo.png); */
+    width: 60vw;
+    margin: 0 auto;
 }
 
 .section--sign-up .section__header {
@@ -780,8 +784,11 @@ transform: translate(50%);
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 0rem;
   border-top: 1px solid hsl(var(--body_text_color));
+  gap: 4rem;
   /* position: relative; */
   /* height: 30vh; */
   /* margin-bottom: 3rem; */
@@ -791,21 +798,28 @@ transform: translate(50%);
 .footer__nav .constainer{
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+       
 }
 
 .footer__nav,
-.footer__nav .constainer{
+.footer__nav .constainer,
+.footer_contact{
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
 
+.footer_contact{
+    flex-direction: column;
+    gap: 4rem;
+}
 .footer__nav{
-display: flex;
-align-items: center;
-justify-content: center;
+
 width: 100%;
+ gap: 10rem;
 
 }
 
@@ -832,6 +846,21 @@ width: 100%;
     font-size: 3rem;
 } 
 
+.footerIcon  li:nth-child(3):hover span{
+   background-color: var(--whatsapp);
+} 
+
+ .footerIcon .github :hover span{
+  background-color: var(--dark_background_color);
+} 
+
+ .footerIcon  .linkdin :hover span{
+  background-color: var(--linkdin);
+}
+
+  .footerIcon .t :hover span{
+  background-color: var(--twitter);
+}
 
 
 .nav__link--btn a{
@@ -847,6 +876,13 @@ color: hsl( var( --light_color));
 font-size: 1.8rem;
     width: 10vw;
 }
+
+   .footer__nav .constainer .social_icons{
+position: relative;
+top: 0;
+left: 0;
+   }
+
 
 .footer__copyright {
 
@@ -1017,8 +1053,8 @@ h1 .name_style {
 
  .nav__link--btn:link span,.nav__link--btn:visited span{
     display: block;
-    margin-bottom:.5em;
-    margin-left: .3em;
+    /* margin-bottom:.1em;
+    margin-left: .3em; */
     
 }
 
