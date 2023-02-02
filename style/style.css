@@ -157,14 +157,15 @@ background:hsl(var(--pink_color));
 
 .nav_button
 .section--sign-up .btn{
-   padding: 2rem 4rem;
+   padding: 4rem 4rem;
    
 }
 
 /* nav button (contact button) */
 .nav_button 
 {
-padding: .4rem 1rem;
+padding: .6rem 1.4rem;
+color: #fff;
 
 }
 
@@ -224,15 +225,15 @@ padding: .4rem 1rem;
     left: 50%;
     right: 50%;
     transform: translate(-51%);
-  
     width: 100vw;
     z-index: 100;
 padding: 1rem 4rem ;
-        background: rgba( 114, 116, 116, 0.4 );
+background: rgba( 114, 116, 116, 0.5 );
 box-shadow: 0 2px 12px 0 rgba(16, 17, 41, 0.37);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 margin: 0;
+color: #fff;
 font-weight: 700;
 }
 
@@ -802,19 +803,19 @@ transform: translate(50%);
 display: flex;
 align-items: center;
 justify-content: center;
-
+gap: 8rem;
 }
 
 
 
 
-.footer_contact,.footer__nav .constainer{
+.footer_contact{
     flex-direction: column;
  
 }
 
 .footer_contact{ 
-    gap: 4rem;
+    gap: 1rem;
 }
 
 .footer__nav{
@@ -1270,6 +1271,10 @@ z-index: 0;
     align-items: center;
     gap: 4rem;
     margin: 3rem 0;
+}
+.footer_contact,.footer__nav .constainer{
+    flex-direction: column;
+ 
 }
 
 .footer__nav img{
