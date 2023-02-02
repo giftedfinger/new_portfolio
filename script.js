@@ -3,7 +3,7 @@
 
 const btnScrollTo = document.querySelector('.btn--scroll-to')
 const section1 = document.querySelector('#section--1')
-
+const person_icon = document.querySelector('.person_icon')
 const modal = document.querySelector('.modal');
 const logo = document.querySelector('.logo');
 const overlay = document.querySelector('.overlay');
@@ -121,6 +121,10 @@ const handleHover =(e,opacity)=>{
 
 }
 
+// person_icon.addEventListener('mouseover', e=>{
+  
+// })
+
 nav.addEventListener('mouseover', e=>{
     handleHover(e,0.5)
    
@@ -146,7 +150,7 @@ const obsCallback = (entries,observer)=>{
 console.log(nav)
 const [entry ] = entries
 
-    if (!entry.isIntersecting) nav.classList.add('bg') 
+    if (!entry.isIntersecting) nav.classList.add('sticky') 
     
     else nav.classList.remove('sticky')
 
@@ -157,7 +161,7 @@ const headerObserver = new IntersectionObserver(obsCallback, {
                                                     root: null,
                                                     threshod: 0,
                                                     rootMargin:`-${navHeight}px`
-                                                })
+   })
 
 headerObserver.observe(header)
 

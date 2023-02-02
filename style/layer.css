@@ -71,10 +71,14 @@ backdrop-filter: blur( 2px );
 }
 
 .center_div{
+
     width: 85vw;
     margin: 0 auto;
     border:1px solid transparent ;
+    
 }
+
+
 
 main{
     display: grid;
