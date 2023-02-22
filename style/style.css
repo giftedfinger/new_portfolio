@@ -37,7 +37,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
@@ -63,6 +63,8 @@ body {
 h1{
     font-weight: 900;
 }
+
+
 h2{
     display: flex;
     align-items: center;
@@ -922,15 +924,35 @@ left: 0;
 
 .center_div{
 
-    width: 89vw;
+    width: 90vw;
 }
 
  nav{
   position: fixed;
   bottom:0%;
   width: 100%;
-  z-index: 200;
+  z-index: 10000; 
+    left: 50%;
+    right: 50%;
+    transform: translate(-55%);
+
+
   
+}
+
+.nav_Sticky{
+    display: flex;
+    gap: 1rem;
+    width: 100vw;
+    z-index: 100;
+padding: 1rem 4rem ;
+background: rgba( 114, 116, 116, 0.5 );
+box-shadow: 0 2px 12px 0 rgba(16, 17, 41, 0.37);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+margin: 0;
+color: #fff;
+font-weight: 200;
 }
 
    .nav {
@@ -949,15 +971,36 @@ justify-content:space-around;
     color: hsl( var(--light_color));
     padding: 0px 0px 0px 0px;
     text-decoration: none;
+    /* padding: 0; */
+    margin: 0 1.4rem;
+}
 
+.nav__link:link:first-child{
+    margin-left: 0;
 }
 
 .nav__item {
-    margin-left:1.5rem;
-    font-weight: 600;
+display: flex;
+gap: .1rem;
+margin: 0;
 }
 
 
+.nav_button {
+   padding: .8rem 1rem;
+    font-size: 1.8rem;
+   
+} 
+
+.nav__link{
+    margin: 0;
+     gap: 0rem;
+}
+
+/* .nav__item:first-child {
+    margin-left: 0rem;
+    font-weight: 600;
+} */
 
 .logo{
     display: none;
@@ -1032,9 +1075,21 @@ h1 .name_style {
     
 }
 
+  /* .sticky {
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-5%);
+    width: 100vw;
+
+} */
+
+.sticky  ul,.sticky  img{
+    margin:0 0vh;
+}
 
 .btn--scroll-to{
-        width: 10rem;
+        width: 14rem;
 }
 
  .nav__link--btn:link, .nav__link--btn:visited {

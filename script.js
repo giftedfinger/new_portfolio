@@ -10,6 +10,7 @@ const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const header = document.querySelector('.header');
+const body = document.querySelector('body');
 
 const tabs = document.querySelectorAll(' .operations__tab')
 const tabsContainer = document.querySelector('.operations__tab-container');
@@ -143,28 +144,36 @@ nav.addEventListener('mouseout', e => {
 
 // intersection observer requires two arguments 1.callback function 2.object
 // calculating nav hiehgt dynamically
+
+
+// nav stick to the bottom of mobile
+
 const navHeight = nav.getBoundingClientRect().height
 
+const navWidth = nav.getBoundingClientRect().width
+
+
+
+    
 
 const obsCallback = (entries,observer)=>{
-console.log(nav)
-const [entry ] = entries
 
-    if (!entry.isIntersecting) nav.classList.add('sticky') 
+const [entry ] = entries
+console.log(entry,entry.intersectionRect.width > 761)
+    if (!entry.isIntersecting &&  entry,entry.intersectionRect.width >= 761) nav.classList.add('sticky') 
     
     else nav.classList.remove('sticky')
-
 
 }
 
 const headerObserver = new IntersectionObserver(obsCallback, {
                                                     root: null,
                                                     threshod: 0,
-                                                    rootMargin:`-${navHeight}px`
+                                                    rootMargin:`-${navHeight}px`,
+                                                    rootMargin:`${navWidth}px`
    })
 
 headerObserver.observe(header)
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -176,11 +185,11 @@ const Allsections = document.querySelectorAll('.section')
 
 const revealsection=(entries,obsever)=>{
 const [entry] = entries;
-
+// let max_width = entry.boundingClientRect.width 
+// console.log(max_width)
 if(!entry.isIntersecting) return;
     entry.target.classList.remove('section--hidden')
-    // to stop the intersection Api from observing
-    obsever.unobserve(entry.target)
+    
 }
 
 const sectionObserver =new IntersectionObserver(revealsection,{
