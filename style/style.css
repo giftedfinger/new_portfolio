@@ -976,8 +976,8 @@ color: #fff;
 font-weight: 200;
 }
 
-.sticky .nav__item >.nav_icon{
-display: block;
+.sticky .nav__item >.nav_icon,nav .nav__item >.nav_icon{
+display: inline-block;
 }
 
    .nav {
@@ -1048,6 +1048,9 @@ margin: 0;
 .logo{
     display: none;
 }
+
+}
+
 
 .mobile_logo{
     position: absolute;
