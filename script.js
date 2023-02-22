@@ -25,6 +25,11 @@ const btnRight = document.querySelector('.slider__btn--right');
 const dotContainer = document.querySelector('.dots');
 
 ///////////////////////////////////////
+
+
+
+
+
 // Modal window
 
 const openModal = (e)=> {
@@ -154,13 +159,12 @@ const navWidth = nav.getBoundingClientRect().width
 
 
 
-    
-
 const obsCallback = (entries,observer)=>{
 
 const [entry ] = entries
-console.log(entry,entry.intersectionRect.width > 761)
-    if (!entry.isIntersecting &&  entry,entry.intersectionRect.width >= 761) nav.classList.add('sticky') 
+console.log(` bounding width ${entry.boundingClientRect.width <760},${entry.isIntersecting} `)
+
+    if (!entry.isIntersecting && entry.boundingClientRect.width >= 760) nav.classList.add('sticky') 
     
     else nav.classList.remove('sticky')
 
@@ -170,7 +174,7 @@ const headerObserver = new IntersectionObserver(obsCallback, {
                                                     root: null,
                                                     threshod: 0,
                                                     rootMargin:`-${navHeight}px`,
-                                                    rootMargin:`${navWidth}px`
+                                                  
    })
 
 headerObserver.observe(header)
@@ -189,7 +193,7 @@ const [entry] = entries;
 // console.log(max_width)
 if(!entry.isIntersecting) return;
     entry.target.classList.remove('section--hidden')
-    
+
 }
 
 const sectionObserver =new IntersectionObserver(revealsection,{
