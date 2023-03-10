@@ -113,10 +113,13 @@ header .hero div{
 .about_container{
   margin-top: 4rem;
 }
+
 .about_content{
+
        display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
     gap: 2rem;
+    
 }
 
 .about div{
