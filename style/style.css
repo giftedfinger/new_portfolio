@@ -95,7 +95,7 @@ a{
       border: 1px solid hsl(var(--pink_color));
     /* color: hsl(var(--light_color)); */
    font-size:var(--btn_font);
-  
+   
    text-align: center;
       cursor: pointer; 
 }
@@ -377,7 +377,7 @@ color: hsl( var( --pink_color));
   top: 50%; 
   left: 15rem;
     gap: 2rem;
-    width: 33vh
+    width: 20vw;
 }
 
 
@@ -473,7 +473,10 @@ margin-top: 4rem;
 }
 
 
-
+.description {
+    width: auto;
+margin-top: 20rem
+}
 
 /* My skills */
 .my_skills_container{
@@ -823,7 +826,7 @@ transform: translate(-50%);
 display: flex;
 align-items: center;
 justify-content: center;
-/* gap: 8rem; */
+gap: 8rem;
 }
 
 
@@ -924,73 +927,8 @@ left: 0;
 
 
 
-@import url('meidaquery.css');
 
 
 
-/* 
-.social_icons {
-
-    top: 35rem;
-    left: 10rem;
-    gap: 2rem;
-    width: 45vh;
- 
-
-} */
-
-.description p{
-    width: auto;
-}
-
-
+/* Media Query */
 @import url('./@mediaQuery.css');
-
-
-/* 
-@media screen and (max-width: 1000px) {
-
-}
-
-
-/* Smartphones (portrait and landscape) ----------- */
-/* @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-
-} */
-
-/* Smartphones (landscape) ----------- */
-/* @media only screen 
-and (min-width : 321px) {
-
-} */
-
-/* Smartphones (portrait) ----------- */
-/* @media only screen 
-and (max-width : 320px) {
- 
-} */
-
-/* iPads (portrait and landscape) ----------- */
-/* @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
- 
-} */
-
-/* iPads (landscape) ----------- */
-/* @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  /* Styles 
-} */
-
-/* iPads (portrait) ----------- */
-/* @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  /* Styles *
-} */
