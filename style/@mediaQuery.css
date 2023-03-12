@@ -39,7 +39,7 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 margin: 0;
 color: #fff;
-font-weight: 700;
+font-size: 1.5rem;
 }
 
 
@@ -332,6 +332,7 @@ transform: translate(-50%);
 }
 
 
+
 .skills_list{
 /*     
        list-style: none; */
@@ -391,7 +392,12 @@ color: var(--clr);
 
 }
     
+.my_project h2{
 
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 /* signup */
@@ -515,6 +521,12 @@ margin: 1rem 0;
     transform: translate(calc(-20%*2),-3%);
 }
 
+}
+
+
+nav .nav_icon{
+    color: hsl( var( --pink_color));
+    font-size: 2.4rem;
 }
 
 

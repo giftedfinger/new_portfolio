@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
         <link rel="stylesheet" href="/style/@mediaQuery.css">
+         <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="/style/ionicons.min.css">
      <link rel="stylesheet" href="https://fontawesome.com/icons/">
  
@@ -32,7 +33,7 @@
                     <a class="nav__link" href="#section--1">About </a>
                 </li>
                       <li class="nav__item">
-                  <ion-icon name="laptop-outline"></ion-icon>
+                  <ion-icon class="nav_icon" name="laptop-outline"></ion-icon>
                     <a class="nav__link" href="#section--2"> Skills </a>
                 </li>
                 <li class="nav__item">
@@ -133,7 +134,7 @@
 
 
     <div class="about_container">
-         <h2>ABOUT <ion-icon  class="person_icon" name="person-circle"></ion-icon></h2>
+         <h2>ABOUT ME<ion-icon class="nav_icon" name="person-circle"></ion-icon></h2>
 <div class="about_content">
     <img class="about_img" src="/img/aboutImg.svg" alt="about image">
 
@@ -156,7 +157,7 @@
 
     <section class="my_skills" id="section--2">
 
-        <h2>MY SKIILS  <ion-icon name="laptop-outline"></ion-icon></h2>
+        <h2>MY SKIILS  <ion-icon class="nav_icon" name="laptop-outline"></ion-icon></h2>
 
         <div class="skill_container">
 <ul class="skills_list">
@@ -212,8 +213,10 @@
 
 
     <section class="section my_project" id="section--3">
-        <div class="section__title section__title--testimonials">
-            <h2 class="section__description">   MY PROJECTS  <ion-icon name="project_icon code-working"></ion-icon></h2>
+        <div>
+            <h2 class="">   MY PROJECTS   
+                <ion-icon class="nav_icon" name="code-working-outline"></ion-icon>
+              </h2>
             <!-- <h3 class="section__header">
                 Millions of Bankists are already making their lifes simpler.
             </h3> -->
@@ -292,13 +295,13 @@
 
         <div class="section__title">
             <h4 class="contact_description">
-                WHY NOT CONTACT ME FOR YOUR NEXT PROJECT OR TO FILL UP AN OPEN SPACE IN YOUR ORGANIZATION
-            </h4>
+                Why not contact me for your  project or fiil up an empty space in your organization
+           </h4>
         </div>
            
 
           <button class=" nav_button sign__up-btn ">
-                    <a class=" " href="mailto:olakunle.iyiola@yahoo.com">Contact </a> <ion-icon name="mail-outline"></ion-icon>
+                    <a class=" nav_icon" href="mailto:olakunle.iyiola@yahoo.com">Contact </a> <ion-icon name="mail-outline"></ion-icon>
              </button>
           <!-- <a class=" btn--show-modal btn "href="mailto:olakunle.iyiola@yahoo.com">
                  Contact  <ion-icon name="mail-outline"></ion-icon></a> -->

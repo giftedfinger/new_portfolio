@@ -81,6 +81,10 @@ a{
     text-decoration: none;
 }
 
+.nav_icon{
+    color: hsl( var( --pink_color));
+    font-size: 5rem;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
@@ -475,7 +479,8 @@ margin-top: 4rem;
 
 .description {
     width: auto;
-margin-top: 20rem
+margin-top: 20rem;
+    line-height: 3.5rem;
 }
 
 /* My skills */
@@ -484,7 +489,8 @@ margin-top: 20rem
 }
 
 
-.my_skills{
+
+.my_skills {
     margin:4rem 0;
 }
 .my_skills h2{
