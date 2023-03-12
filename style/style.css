@@ -81,7 +81,7 @@ a{
     text-decoration: none;
 }
 
-.nav_icon{
+h2 .nav_icon{
     color: hsl( var( --pink_color));
     font-size: 5rem;
 }
@@ -764,9 +764,10 @@ background: hsl(var(--light_color));
     border-top: none;
     border-bottom: 1px solid #444;
     text-align: center;
-    padding: 10rem 3rem;
+    padding: 10rem 0rem;
     transition: all .8s;
     margin-bottom: 10rem;
+
 
 }
 
@@ -792,7 +793,7 @@ transform: translate(-50%);
 .section--sign-up h4{
     color:hsl( var( --dark_background_color)) ;
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 4rem;
     /* filter:url(../img/logo.png); */
     width: 60vw;
     margin: 0 auto;
