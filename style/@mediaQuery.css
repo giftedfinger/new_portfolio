@@ -403,9 +403,28 @@ color: var(--clr);
 /* signup */
 
 .section--sign-up{
-width: 90vw;
+    display: flex;
+    flex-direction: column;
+width: 100vw;
+}
+.contact_icons{
+    right:0%;
+    width: 30vw;
 }
 
+.section__title h3{
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.contact_description {
+width: 60vw;
+    line-height: 3rem;
+
+}
+.contact_icons p{
+    display: none;
+}
 .section--sign-up .btn{
      padding: 14px 0;
     font-size: 1.4rem;
@@ -419,7 +438,7 @@ width: 90vw;
 
 .section--sign-up h4{
     font-size: 3rem;
-    line-height: 3.5rem;
+    /* line-height: 3.5rem; */
 }
 
 /* /////////////////////////////////////////FOOTER */
@@ -440,6 +459,7 @@ justify-items   : center;
 align-items: center;
 
 }
+
 .social_icons{
      display: none;
 }
@@ -602,6 +622,13 @@ nav .nav_icon{
     height: 5.5rem;
     width: 5.5rem;
     font-size: 3.25rem;
+}
+
+
+.section--sign-up{
+    display: flex;
+    background-color: red;
+    flex-direction: row;
 }
 
 }

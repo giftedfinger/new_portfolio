@@ -794,14 +794,14 @@ background: hsl(var(--light_color));
     transition: all .8s;
     margin: 0 auto;
     margin-bottom: 10rem;
-    width: 45vw;
+    width: 50vw;
     height: 50vh;
 
 
 }
 
 .section__title{
-    width: 25vw;    
+    width: 30vw;    
 }
 .contact_description{
     color:hsl( var( --dark_background_color)) ;
@@ -818,7 +818,7 @@ background: hsl(var(--light_color));
     width: 24vw;
     height: 65vh;
     position: absolute;
-    right:-20% ;
+    right:-15% ;
     /* padding: 4rem; */
     bottom:-14%;
     box-shadow: -6px 13px 6px -1px var(--sample);
