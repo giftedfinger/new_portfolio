@@ -320,8 +320,8 @@ z-index: -1;
     width: 45vw;
     position: relative;
     top: 0%;
-    left: 50%;
-    transform: translate(40%,0%);
+    left: 10%;
+    transform: translate(0%,0%);
     flex-direction: column;
     justify-content: center;
 }
@@ -378,8 +378,8 @@ color: hsl( var( --pink_color));
         transform-style: preserve-3d;
      transform: rotate(-25deg)  skew(25deg); 
     position: absolute;
-  top: 50%; 
-  left: 15rem;
+  bottom: 5%; 
+  right:  30rem;
     gap: 2rem;
     width: 20vw;
 }

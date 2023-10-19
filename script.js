@@ -24,6 +24,8 @@ const btnLeft = document.querySelector('.slider__btn--left');
 const btnRight = document.querySelector('.slider__btn--right');
 const dotContainer = document.querySelector('.dots');
 
+const socialIcons = document.querySelector('.social_icons');
+
 ///////////////////////////////////////
 
 
@@ -135,7 +137,7 @@ const navWidth = nav.getBoundingClientRect().width
 const obsCallback = (entries,observer)=>{
 
 const [entry ] = entries
-console.log(` bounding width ${entry.boundingClientRect.width <760},${entry.isIntersecting} `)
+
 
     if (!entry.isIntersecting && entry.boundingClientRect.width >= 760) nav.classList.add('sticky') 
     
@@ -345,3 +347,4 @@ dotContainer.addEventListener('click', (e)=>{
 }
 
 Slider()
+
