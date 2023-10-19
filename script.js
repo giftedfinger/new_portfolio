@@ -26,8 +26,10 @@ const dotContainer = document.querySelector('.dots');
 
 const socialIcons = document.querySelector('.social_icons');
 
-///////////////////////////////////////
+const contactIconsElement = document.querySelector('.contact_list');
 
+
+///////////////////////////////////////
 
 
 
@@ -346,5 +348,34 @@ dotContainer.addEventListener('click', (e)=>{
 })
 }
 
-Slider()
 
+
+contactIconsElement.addEventListener('mouseover', e => {
+    
+    const target = e.target.closest('li')
+console.log(target.closest('li'))
+
+    target.style.color ='rgb(224, 72, 97)' ;
+    target.querySelector('a').style.color ='rgb(224, 72, 97)' ;
+    
+
+
+
+
+})
+
+contactIconsElement.addEventListener('mouseout', e => {
+
+    const target = e.target.closest('li')
+
+
+    target.style.color ='white' ;
+    target.querySelector('a').style.color ='white' ;
+    target.querySelector('a').style.color ='white' ;
+
+
+
+
+})
+
+Slider()

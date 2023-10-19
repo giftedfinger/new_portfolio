@@ -478,11 +478,51 @@ margin-top: 4rem;
 
 
 .description {
+    position: relative;
     width: auto;
 margin-top: 20rem;
     line-height: 3.5rem;
 }
 
+.description p span {
+    color: var(--sample);
+    font-weight: 1000;
+    font-style:oblique;
+    margin: 0 .5rem;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+
+    
+}
+
+
+.description p::after,
+.my_project::after{
+    content: '';
+    position: absolute;
+    left: 80%;
+    top:80%;
+    left: 80%;
+    transform: translate(50%,50%);
+    width: .1px;
+    height: 0vh;
+        content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--sample);
+    box-shadow: -16px 10px 156px 98px var(--sample);
+-webkit-box-shadow: 10px 0px 400px 80px var(--sample);
+-moz-box-shadow: -16px 0px 116px 48px var(--sample);
+z-index: -1;
+}
+
+.my_project::after{
+    left: 10%;
+    top: 80%;
+
+    transform: translate(0%,50%);
+    
+}
 /* My skills */
 .my_skills_container{
     height: 80vh;
@@ -745,25 +785,120 @@ padding-top: 1rem;
 
 /*//////////////////////////////// C O N T A C T ////////////////////////////////*/
 .section--sign-up {
+    position: relative;
 background: hsl(var(--light_color));
     border-top: none;
     border-bottom: 1px solid #444;
     text-align: center;
-    padding: 10rem 0rem;
+    /* padding: 5rem 2rem; */
     transition: all .8s;
+    margin: 0 auto;
     margin-bottom: 10rem;
+    width: 45vw;
+    height: 50vh;
 
 
 }
 
+.section__title{
+    width: 25vw;    
+}
+.contact_description{
+    color:hsl( var( --dark_background_color)) ;
+    /* text-align: left; */
+    font-size: 2rem;
+    margin: 5% auto;
+    /* border: 1px solid; */
+}
 
+
+
+.contact_icons {
+    background-color: var(--sample);
+    width: 24vw;
+    height: 65vh;
+    position: absolute;
+    right:-20% ;
+    /* padding: 4rem; */
+    bottom:-14%;
+    box-shadow: -6px 13px 6px -1px var(--sample);
+-webkit-box-shadow: -6px 13px 46px -11px var(--sample);
+-moz-box-shadow: -6px 13px 36px -11px var(--sample);
+
+}
+
+.section--sign-up h3{
+    color: var(--sample);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+}
+
+
+
+.contact_icons p{
+    margin: 3rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid white ;
+    padding-bottom: 2rem ;
+}
+
+ .contact_icons ul li a ,.contact_icons{
+    color: white;
+
+}
+
+ .contact_icons ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: .5rem;
+    padding-left: 3rem;
+    width: 100%;
+ }
+.contact_icons ul{
+    width: 20vw;
+    /* margin: 0rem auto; */
+    margin-top: 4rem;
+
+}
+
+ .contact_icons ul li  a{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+ }
+
+
+ .contact_icon ul li a:hover .contact_icons p{
+  color: var(--sample);
+}
+
+
+ .contact_icons ul li:hover {
+    background-color: white;
+  color: var(--sample);
+list-style: disc;
+list-style-position:3rem;
+ }
+
+.hoverStyle ul li a:hover{
+  color: var(--sample);
+
+} 
+
+
+.contact_icons ul li a{
+    font-size: 2rem;
+}
 .btn{
+
     /* color:rgb(242, 178, 155); */
         color: hsl( var( --dark_background_color));
     /* border: 1px solid hsl( var( --dark_background_color),.2); */
     background-color: transparent;
     box-shadow: -2px 1px 4px 2px hsl( var( --dark_background_color),.2);
-    position: absolute;
+    position: relative;
   right: 50%;
 transform: translate(50%);
 }
@@ -775,14 +910,7 @@ right: 50%;
 transform: translate(-50%);
 }
 
-.section--sign-up h4{
-    color:hsl( var( --dark_background_color)) ;
-    text-align: left;
-    font-size: 4rem;
-    /* filter:url(../img/logo.png); */
-    width: 60vw;
-    margin: 0 auto;
-}
+
 
 .section--sign-up .section__header {
     text-align: center;
