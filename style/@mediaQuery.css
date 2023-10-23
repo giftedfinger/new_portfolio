@@ -2,8 +2,7 @@
 
 
 @media only screen 
-and (min-device-width : 200px) 
-and (max-device-width : 760px) {
+and (max-width : 768px)  {
   /*CSS for medium width screens*/
      body{ 
         font-size: 1.75rem;
@@ -132,7 +131,10 @@ margin: 0;
 }
 
 
+.contact_description{
 
+font-size: 1.8rem;
+}
 
 .mobile_logo{
  
@@ -403,28 +405,50 @@ color: var(--clr);
 /* signup */
 
 .section--sign-up{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 width: 100vw;
 }
 .contact_icons{
     right:0%;
-    width: 30vw;
+    width: 40vw;
+}
+
+.contact_icons ul{
+    width: 45vw;
+    margin-top: 1rem;
+}
+.contact_icons ul li{
+    padding: 4px;
+    padding-left: 0;
+    
+}
+
+.contact_icons ul li a{
+    gap: 1rem;
+    
+    margin-left: 4px;
+}
+
+.contact_icons p{
+    margin-bottom: 0;
 }
 
 .section__title h3{
     text-align: center;
-    /* margin: 0 auto; */
+    width:60vw;
+    margin-top: 2rem;
+
 }
 
 .contact_description {
-width: 60vw;
-    line-height: 3rem;
+width: 55vw;
+line-height: 2.3rem;
+text-align: left;
+margin: 2rem -1rem;
 
 }
-.contact_icons p{
-    display: none;
-}
+
 .section--sign-up .btn{
      padding: 14px 0;
     font-size: 1.4rem;
@@ -550,6 +574,9 @@ nav .nav_icon{
 }
 
 
+@media screen and  (width:768px){
+}
+
 
 @media screen and  (min-width:400px)and (max-width:579px){
       header {  
@@ -627,40 +654,66 @@ nav .nav_icon{
 
 .section--sign-up{
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     flex-direction: row;
 }
 
 }
 
-@media (width: 768px){
+@media only screen and (width: 768px){
 
       header {  
-    background-position:calc(25%*2);
-    background-position-y: calc(30%/2); 
+    /* background-position:calc(25%); */
+    background-position-y: calc(18%); 
 
-    
- 
 }
 
 .hero_text-div{
     /* border: 1px solid; */
-   
-    position: relative;
+   /* display: flex; */
+    /* position: relative; */
     right: 50%;
     left: 50%;
-    transform: translate(calc(25*2),30%);
+    transform: translate(calc(-20%*2),2%);
+
 
 
 }
 
 .hero_text-div h4 {
-    border: 1px solid;
- 
-      width: calc(20%*2);
-    
+       width: calc(30%*2);
+   
 }
 
+/* about */
+.about_content{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+    border: 1px solid red;
+
+}
+
+.description{
+    border: 1px solid;
+    left: 50%;
+    transform:translate(-100%);
+
+}
+
+.description p{
+    /* left:0%; */
+    width: 50vw;
+    margin-bottom: 0;
+}
+
+.about_img{
+width: 40vw;
+
+}
+
+/* skills */
 
 
 
@@ -681,11 +734,88 @@ nav .nav_icon{
     margin-top: 3rem;
     /* position: relative; */
   
+}
+/* projects  */
+.projects{
+    width: 60vw;
 
+    margin: 0 auto;
+}
+
+.testimonial__photo{
+    width: 50vw;
+}
+
+/* Contact */
+.contact_icons{
+width: 25vw;
+right:0%;
+}
+
+.contact_description{
+width: inherit;
+}
+
+.section--sign-up{
+    width: 80%;
+}
+.section__title h3{
+    width: inherit;
+}
+
+.section__title{
+    width: 81%;
+    padding-left:3rem ;
 
 }
 
+.my_skills{
+    position: relative;
+}
 
+
+.skills_list{
+    gap: 6rem;
+}
+
+.contact_icons ul li a{
+    width: 40%;
+}
+/* footer */
+
+ .constainer{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer__nav{
+    /* display: inline;  */
+}
+.footer__nav img{
+    width: 20vw;
+}
+
+.footer__nav .constainer .social_icons {
+width:36vw;
+
+}
+
+.footer_contact, .footer__nav .constainer{
+display: flex;
+flex-direction: row;
+}
+
+.social_icons li span{
+    width: 91%;
+    height: 89%;
+}
+
+ .footer__nav .constainer .social_icons{
+    gap: .4rem;
+ }
+
+ .footer{
+    padding-bottom: 0;
+ }
 }
 
 @media only screen and (min-width: 200px) and (max-width:400px){
@@ -701,8 +831,16 @@ z-index: 0;
    }
 }
 
-@media only screen and (min-width: 200px) and (max-width:410px){
+@media only screen and (min-width: 200px) and (max-width:320px){
 nav .nav_button {
     display: none;
 }
+
+.section--sign-up{
+    height: 60vh;
+}
+.contact_icons{
+    top: -5%;
+}
+
 }
