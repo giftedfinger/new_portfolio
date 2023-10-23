@@ -801,7 +801,7 @@ background: hsl(var(--light_color));
 }
 
 .section__title{
-    width: 30vw;    
+    width: 28vw;    
 }
 .contact_description{
     color:hsl( var( --dark_background_color)) ;
